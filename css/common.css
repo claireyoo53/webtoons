@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", "Noto sans kr", Helvetica, sans-serif;
+  letter-spacing: -0.4px;
+  line-height: 1.4;
+}
+
+.page_header {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.page_header .inner {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto; /* top/bottom. left/right */
+  /* background-color: gold; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.gnb a {
+  padding: 5px; /* left, right */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header_left {
+  display: flex;
+  gap: 10px;
+  /* background-color: blue; */
+  align-items: center;
+}
+.gnb ul {
+  display: flex;
+  gap: 20px;
+}
+.header_right {
+  font-size: 15px;
+  font-weight: 600;
+  /*  background-color: red; */
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.header_right .dashboard {
+  border-radius: 40px;
+  max-width: 200px;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 15px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.header_right button {
+  border-radius: 40px;
+  max-width: 200px;
+  background-color: lightgrey;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 15px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.header_right .dashboard {
+  background-color: black;
+  color: white;
+}
+
+.modal_login,
+.modal_search {
+  display: none;
+}
+.modal_login {
+  max-width: 380px;
+  border-radius: 20px;
+  border-color: lightgrey;
+  background-color: white;
+  max-height: 550px;
+  text-align: center;
+}
+
+.modal_login a {
+  /* border-color: lightgrey;
+  border-width: 1px;
+  border-style: solid; */
+
+  border: 1px solid lightgrey;
+
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 12px;
+  display: block;
+}
+
+.modal_login h2 {
+  font-size: 20px;
+}
+
+.modal_login p {
+  font-size: 13px;
+}
+
+/*
+.container {
+  width: 1000px;
+  background-color: olive;
+  height: 120px;
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.a {
+  background-color: tomato;
+}
+.b {
+  background-color: dodgerblue;
+}
+.c {
+  background-color: pink;
+}
+  */
+/* Trending & Popular series */
+
+.section_trending {
+  margin: 160px auto 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.section_trending header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.section_trending h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.section_trending header a {
+  font-size: 12px;
+  color: #666;
+}
+.tab_menu_list {
+  display: flex;
+  gap: 6px;
+  padding: 0 0 15px;
+}
+.tab_menu_list button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 20px;
+  background-color: #f3f3f3;
+  height: 52px;
+  border-radius: 30px;
+}
+
+.tab_menu_list button:hover {
+  background-color: #c0c0c0;
+}
+
+.tab_menu_list .active {
+  background-color: #000;
+  color: #fff;
+}
+
+.tab_menu_list .active:hover {
+  background-color: #000;
+}
+
+.webtoons_rank_list ol {
+  display: flex;
+  gap: 15px;
+}
+
+.webtoons_rank_list .new .badge {
+  display: block;
+}
+
+.webtoons_rank_list .image_wrap {
+  width: 232px;
+  height: 301px;
+  /* outline: 1px solid red; */
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  border: solid rgb(210, 210, 210) 1px;
+}
+
+.badge {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  display: none;
+  background-color: black;
+  color: #24f627;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.webtoons_rank_list .image_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 왜 맥스 윗드 맥스 하잇은 적용이 안되는지?*/
+  /* cover, contain, fill, none, scale down*/
+}
+
+.ranking_text strong {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.ranking_number {
+  font-size: 80px;
+  font-weight: 800;
+  position: relative;
+  top: -55px;
+  bottom: -55px;
+  left: -4px;
+  -webkit-text-stroke: 4px white; /* Thickness and border color */
+}
+
+.genre {
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
+.banner {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.banner h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0px 0 10px 0;
+}
+
+.banner img {
+  border-radius: 5px;
+  width: 100%;
+}
