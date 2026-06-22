@@ -154,7 +154,7 @@ body {
 }
 
 .section_trending header a {
-  font-size: 12px;
+  font-size: 14px;
   color: #666;
 }
 .tab_menu_list {
@@ -184,23 +184,13 @@ body {
   background-color: #000;
 }
 
-.webtoons_rank_list ol {
+.webtoons_list ol {
   display: flex;
   gap: 15px;
 }
 
-.webtoons_rank_list .new .badge {
+.webtoons_list .new .badge {
   display: block;
-}
-
-.webtoons_rank_list .image_wrap {
-  width: 232px;
-  height: 301px;
-  /* outline: 1px solid red; */
-  overflow: hidden;
-  position: relative;
-  border-radius: 3px;
-  border: solid rgb(210, 210, 210) 1px;
 }
 
 .badge {
@@ -216,7 +206,17 @@ body {
   border-radius: 3px;
 }
 
-.webtoons_rank_list .image_wrap img {
+.webtoons_list .image_wrap {
+  width: 232px;
+  height: 301px;
+  /* outline: 1px solid red; */
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  border: solid rgb(210, 210, 210) 1px;
+}
+
+.webtoons_list .image_wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -224,19 +224,37 @@ body {
   /* cover, contain, fill, none, scale down*/
 }
 
-.ranking_text strong {
-  font-weight: 500;
-  font-size: 18px;
+.toons_contents {
+  position: relative;
+  margin-top: -55px;
 }
 
-.ranking_number {
+.toons_contents .ranking {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.toons_contents strong {
   font-size: 80px;
   font-weight: 800;
-  position: relative;
-  top: -55px;
-  bottom: -55px;
-  left: -4px;
   -webkit-text-stroke: 4px white; /* Thickness and border color */
+}
+
+.toons_contents .rank_change {
+  position: relative;
+  top: 20px;
+  font-size: 12px;
+}
+
+.toons_info {
+  position: relative;
+  margin-top: -20px;
+}
+
+.toons_contents h3 {
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .genre {
@@ -251,13 +269,292 @@ body {
   margin: 0 auto;
 }
 
-.banner h3 {
+.banner h2 {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0px 0 10px 0;
+  padding: 25px 0 0;
 }
 
 .banner img {
   border-radius: 5px;
   width: 100%;
+}
+
+.category {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.category h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 20px 0 15px;
+}
+
+.category header a {
+  font-size: 14px;
+  color: #666;
+  margin: 20px 0 15px;
+}
+
+.category_tab button {
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #f3f3f3;
+  padding: 0 20px;
+  margin: 0 0 15px;
+  height: 40px;
+}
+
+.category_list ul {
+  display: flex;
+  gap: 10px;
+}
+
+.category_list img {
+  width: 192px;
+  height: 249px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category_list h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.category_list p {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+.block {
+  background-color: rgb(235, 235, 235);
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 0;
+}
+.block img {
+  height: 100%;
+}
+
+.new_released {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+.new_released h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 20px 0 15px;
+}
+
+.new_released ul {
+  display: flex;
+  gap: 20px;
+}
+
+.new_released img {
+  width: 231px;
+  height: 301px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.daily {
+  width: 1200px;
+  margin: 30px auto;
+}
+.daily header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.daily h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.daily header a {
+  color: #8c8c8c;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.daily_tab button {
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #f3f3f3;
+  padding: 0 20px;
+  margin: 0 0 15px;
+  height: 48px;
+}
+.daily_list ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.daily_list img {
+  width: 192px;
+  height: 249px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.daily_list genre {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.daily_list h3 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.daily_list p {
+  color: #03aa5a;
+  font-size: 12px;
+}
+
+.indie_creators {
+  width: 1200px;
+  margin: 0 auto 100px;
+}
+
+.indie_creators header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+}
+
+.indie_creators h2 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.indie_creators header a {
+  color: #666;
+  font-size: 14px;
+}
+.indie_creators ul {
+  display: flex;
+  gap: 15px;
+}
+
+.indie_creators img {
+  width: 192px;
+  height: 192px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.indie_creators h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.indie_creators p {
+  color: #8c8c8c;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.notice {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 80px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  border-top: solid 0.5px #bcbcbc;
+  border-bottom: solid 0.5px #bcbcbc;
+}
+
+.notice_left {
+  margin: 15px 0;
+}
+.notice_bold {
+  font-weight: 600;
+}
+
+.duolingo {
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.notice p {
+  margin: 15px 0;
+  color: #bcbcbc;
+}
+
+.download {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.download .qr_code {
+  width: 100px;
+  height: 100px;
+}
+
+.download img {
+  width: 150px;
+  border: solid 0.5px #bcbcbc;
+}
+
+.download_store {
+  display: flex;
+  flex-direction: column;
+}
+
+.download_store p {
+  margin: 30px 10px 0;
+}
+
+.download_buttons {
+  margin: 15px 10px 0;
+}
+.download_buttons img {
+  height: 40px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #ebebeb;
+  height: 250px;
+}
+
+.footer_icons {
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer_icons img {
+  width: 30px;
+  height: 30px;
+  margin: 60px 0 0;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0 0;
+  color: #474747;
+  font-size: 14px;
 }
